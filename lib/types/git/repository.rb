@@ -2,8 +2,10 @@
 
 module Types
   module Git
+    # :nodoc:
     class Repository
       attr_accessor :name, :full_name, :url, :description
+
       def initialize(response)
         @name = response.name
         @full_name = response.full_name

@@ -12,7 +12,7 @@ describe GitExplorer::Repository do
     end
   end
 
-  it 'returns an empty repository list when there are no available repositories' do
+  it 'returns an empty repository on unavailable repositories' do
     subject.search('lsakdjffhasldfhalskfdj').tap do |response|
       expect(response).to be_a(Types::Git::Repositories)
       expect(response.count).to eq(0)

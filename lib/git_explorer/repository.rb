@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 module GitExplorer
+  # :nodoc:
   class Repository
     attr_accessor :config, :client
 

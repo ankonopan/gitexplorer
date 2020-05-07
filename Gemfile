@@ -9,6 +9,10 @@ gem 'octokit'
 gem 'rspec'
 gem 'rubocop-shopify'
 
+gem 'rake'
+gem 'shotgun'
+gem 'sinatra'
+
 group :development, :test do
   gem 'awesome_print'
   gem 'pry-byebug'
