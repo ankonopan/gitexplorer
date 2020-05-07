@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Types
   module Git
     class Repository
@@ -17,7 +19,6 @@ module Types
           description: description
         }
       end
-
     end
   end
 end

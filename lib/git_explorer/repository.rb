@@ -1,11 +1,13 @@
+# frozen_string_literal: true
+
 module GitExplorer
   class Repository
     attr_accessor :config, :client
 
-    def initialize(config={})
+    def initialize(config = {})
       case config
       in {}
-      raise "Invalid configuration"
+      raise 'Invalid configuration'
       else
         @config = config
         @client = config[:client]
@@ -13,7 +15,7 @@ module GitExplorer
     end
 
     def search(...)
-      Types::Git::Repositories.new( client.search_repositories(...) )
+      Types::Git::Repositories.new(client.search_repositories(...))
     end
   end
 end
